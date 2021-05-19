@@ -1,0 +1,171 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+</html>
+<app-navbar></app-navbar>
+      
+
+<div class="container">
+   
+  <div class="panel-group">
+   
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">Ajouter une publication </div>
+      <div class="panel-body">
+           <form [formGroup]="form" (ngSubmit)="inserpost()"control="" class="form-group">
+               
+                
+            <div class="row text-center">
+            
+                <div class="col-sm-6">
+               
+                        <div class="form-group">
+                             <label for="nom">Nom de l'entreprise  :</label>
+                        <input type="text" formControlName="nom" 
+                               placeholder="  Nom de l'entreprise "
+                               required  class="form-control"
+                               [(ngModel)]="info.nom" />
+                            </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="metier">Métier   :</label>
+                 
+
+                        <select formControlName="metier"class="form-control" id="metier" 
+                        [(ngModel)]="info.metier"required>
+                            <option value="Energie">informatique</option>
+                            <option value="Industrie.">Industrie</option>
+                            <option value="Tourisme">Tourisme et Loisirs.</option>
+                            <option value="Energie">Energie</option>
+                            <option value="Energie">Finance</option>
+                            <option value="Energie">Commerce</option>
+                        </select>
+                    </div>
+              
+                        </div>
+                        <div class="col-sm-6">
+                               
+                               <div class="form-group">
+                                <label for="bnrposte">Nombre de postes  :</label>
+                           <input type="text" formControlName="bnrposte" 
+                                  placeholder=" Nombre de postes  "
+                                  required class="form-control" 
+                                  [(ngModel)]="info.bnrposte"/>
+                               </div>
+                            </div>
+                            <div class="col-sm-6">
+                               <div class="form-group">
+                                <label for="lieu">lieu de poste   :</label>
+                           <input type="text" formControlName="lieu" 
+                                  placeholder="  lieu de poste  "
+                                  required class="form-control" 
+                                  [(ngModel)]="info.lieu"/>
+                               </div>
+                            </div>
+                      
+                            
+                          
+             </div>
+
+
+
+
+             <div class="row text-center">
+                <div class="col-sm-6">
+                       
+                    <div class="form-group">
+                     <label for="nivo">Niveau d'étude   :</label>
+                <input type="text" formControlName="nivo" 
+                       placeholder=" lieu de l'entreprise   "
+                       required class="form-control"
+                       [(ngModel)]="info.nivo" />
+                    </div>
+                 </div>
+           
+                <div class="col-sm-6">
+                       
+                    <div class="form-group">
+                     <label for="type">Type de contrat  :</label>
+                <input type="text" formControlName="type" 
+                       placeholder=" lieu de l'entreprise   "
+                       required class="form-control"
+                       [(ngModel)]="info.type" />
+                    </div>
+                  
+                
+            </div>
+
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-6">
+                   
+                <div class="form-group">
+                 <label for="dateex">Date d'expiration  :</label>
+                 <input type="date" id="dateex" formControlName="dateex"
+                 value="2021-01-15"
+                 min="1900-01-01" max="2200-12-31" 
+                  [(ngModel)]="info.dateex" required>
+                </div>
+             </div>
+       
+            <div class="col-sm-6">
+                   
+                <div class="form-group">
+                 <label for="titre">Titre de poste  :</label>
+            <input type="text" formControlName="titre" 
+                   placeholder=" Titre de poste   "
+                   required class="form-control"
+                   [(ngModel)]="info.titre" />
+                </div>
+              
+            
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+            <div class="form-group">
+                    <textarea class="form-control" id="desc" formControlName="desc"
+                     placeholder="Déscription" rows="5"
+                     [(ngModel)]="info.desc"></textarea>
+                    </div>
+              <br>
+ 
+                <div class="form-group">
+                     
+                        <button type="submit" class="btn btn-success"> 
+                            <span class="glyphicon glyphicon-add"></span>Publier</button>
+                        </div>
+                    </form>
+         </div>        
+            
+            
+          
+        
+            
+    </div>
+
+  
+  </div>
+</div>
+
+
+
+ 
