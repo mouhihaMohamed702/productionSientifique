@@ -19,6 +19,11 @@ import { DoctorantComponent } from './doctorant/doctorant.component';
 import { EquipeComponent } from './equipe/equipe.component';
 import { ProfComponent } from './prof/prof.component';
 import { Etab2Component } from './etab2/etab2.component';
+import { ProflistComponent } from './proflist/proflist.component';
+import { DoctorantlistComponent } from './doctorantlist/doctorantlist.component';
+import { EquipelistComponent } from './equipelist/equipelist.component';
+import { AuteurlistComponent } from './auteurlist/auteurlist.component';
+import { EtablissementlistComponent } from './etablissementlist/etablissementlist.component';
 
 
 @NgModule({
@@ -49,6 +54,16 @@ import { Etab2Component } from './etab2/etab2.component';
     ProfComponent,
    
     Etab2Component,
+   
+    ProflistComponent,
+   
+    DoctorantlistComponent,
+   
+    EquipelistComponent,
+   
+    AuteurlistComponent,
+   
+    EtablissementlistComponent,
    
   ],
   imports: [
