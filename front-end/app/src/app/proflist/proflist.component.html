@@ -1,1 +1,66 @@
-<p>proflist works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+</html>
+<div class="container">
+<div class="panel-group">
+    <a routerLink=''> 
+        <span class="glyphicon glyphicon-plus" ></span>
+        Ajouter Professeur </a>
+<div class="panel panel-primary">
+    <div class="panel-heading">les Professeurs
+   
+      
+    </div>
+    <div class="panel-body"> <table class="table table-striped table-bordered">
+      
+      <thead>
+          <tr>
+              <th>Nom de Professeur</th>     <th>Prenom de Professeur </th> 
+              <th>Grade  </th>   <th>Etablissement </th> 
+              
+              <th>Action</th>  
+             
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+       <!--   <tr *ngFor="let elt of cvs ">
+              <th>{{ elt.id }}</th>  
+              <th>{{ elt.titre }}</th>
+              <th>{{ elt.langue }}</th>
+              <th><a href="#" (click)="view(elt.image)">
+                  {{elt.image}}
+              </a></th>
+          
+          -->
+              <td>
+                   
+                  <a routerLink="/compte/mesinfos/editcv/{{ elt.id }}"
+                   >
+                  <span class="glyphicon glyphicon-edit">
+                  </span> 
+                 
+                  </a>
+                  <a (click)="deletecv(elt.id)" class=" glyphicon glyphicon-remove " >
+                      
+                      </a>
+                  
+              </td>
+   
+              
+          </tr>
+             
+         
+      </tbody>
+  </table></div>
+  </div></div></div>
