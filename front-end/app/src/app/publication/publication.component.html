@@ -29,45 +29,41 @@
                 <div class="col-sm-6">
                
                         <div class="form-group">
-                             <label for="nom">Nom de l'entreprise  :</label>
+                             <label for="nom"> titre de la publication :</label>
                         <input type="text" formControlName="nom" 
-                               placeholder="  Nom de l'entreprise "
+                               placeholder="  titre de la publication "
                                required  class="form-control"
                                [(ngModel)]="info.nom" />
                             </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="metier">Métier   :</label>
+                        <label for="metier">les auteurs   :</label>
                  
-
-                        <select formControlName="metier"class="form-control" id="metier" 
-                        [(ngModel)]="info.metier"required>
-                            <option value="Energie">informatique</option>
-                            <option value="Industrie.">Industrie</option>
-                            <option value="Tourisme">Tourisme et Loisirs.</option>
-                            <option value="Energie">Energie</option>
-                            <option value="Energie">Finance</option>
-                            <option value="Energie">Commerce</option>
-                        </select>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Baddi Youssef</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">Yassine Malah</label>
+                          </div>
                     </div>
               
                         </div>
                         <div class="col-sm-6">
                                
                                <div class="form-group">
-                                <label for="bnrposte">Nombre de postes  :</label>
+                                <label for="bnrposte">publication revue internationnale indexe :</label>
                            <input type="text" formControlName="bnrposte" 
-                                  placeholder=" Nombre de postes  "
+                                  placeholder=" nom complet du journal  "
                                   required class="form-control" 
                                   [(ngModel)]="info.bnrposte"/>
                                </div>
                             </div>
                             <div class="col-sm-6">
                                <div class="form-group">
-                                <label for="lieu">lieu de poste   :</label>
+                                <label for="lieu">publication revue commite de lecture :</label>
                            <input type="text" formControlName="lieu" 
-                                  placeholder="  lieu de poste  "
+                                  placeholder=" nom complet du journal "
                                   required class="form-control" 
                                   [(ngModel)]="info.lieu"/>
                                </div>
@@ -84,9 +80,9 @@
                 <div class="col-sm-6">
                        
                     <div class="form-group">
-                     <label for="nivo">Niveau d'étude   :</label>
+                     <label for="nivo"> publication revue sans commite de lecture   :</label>
                 <input type="text" formControlName="nivo" 
-                       placeholder=" lieu de l'entreprise   "
+                       placeholder="  nom complet du journal   "
                        required class="form-control"
                        [(ngModel)]="info.nivo" />
                     </div>
@@ -94,45 +90,23 @@
            
                 <div class="col-sm-6">
                        
-                    <div class="form-group">
-                     <label for="type">Type de contrat  :</label>
-                <input type="text" formControlName="type" 
-                       placeholder=" lieu de l'entreprise   "
-                       required class="form-control"
-                       [(ngModel)]="info.type" />
-                    </div>
+                    <div class="col-sm-6">
+                   
+                        <div class="form-group">
+                         <label for="dateex">année  :</label>
+                         <input type="date" id="dateex" formControlName="dateex"
+                         value="2021-01-15"
+                         min="1900-01-01" max="2200-12-31" 
+                          [(ngModel)]="info.dateex" required>
+                        </div>
+                     </div>
                   
                 
             </div>
 
         </div>
 
-        <div class="row text-center">
-            <div class="col-sm-6">
-                   
-                <div class="form-group">
-                 <label for="dateex">Date d'expiration  :</label>
-                 <input type="date" id="dateex" formControlName="dateex"
-                 value="2021-01-15"
-                 min="1900-01-01" max="2200-12-31" 
-                  [(ngModel)]="info.dateex" required>
-                </div>
-             </div>
        
-            <div class="col-sm-6">
-                   
-                <div class="form-group">
-                 <label for="titre">Titre de poste  :</label>
-            <input type="text" formControlName="titre" 
-                   placeholder=" Titre de poste   "
-                   required class="form-control"
-                   [(ngModel)]="info.titre" />
-                </div>
-              
-            
-        </div>
-
-    </div>
 
 
 
@@ -141,11 +115,7 @@
 
 
 
-            <div class="form-group">
-                    <textarea class="form-control" id="desc" formControlName="desc"
-                     placeholder="Déscription" rows="5"
-                     [(ngModel)]="info.desc"></textarea>
-                    </div>
+          
               <br>
  
                 <div class="form-group">

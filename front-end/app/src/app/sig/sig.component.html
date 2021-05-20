@@ -5,7 +5,7 @@
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <meta name="author" content="Yinka Enoch Adedokun">
-       <title>Login Page</title>
+       
     </head>
     <body>
        
@@ -23,13 +23,13 @@
                      
                    </div>
                    <div class="row">
-                      <form [formGroup]="form" (ngSubmit)="submit()"control="" class="form-group">
+                      <form control="" class="form-group">
                          
                          
                          <div class="row">
                             <input type="text"  formControlName="name"
                              id="name" class="form__input" placeholder="Username"
-                             [(ngModel)]="sig.name" 
+                            
                              >
                              <div *ngIf="f.name.touched && f.name.invalid" class="alert alert-danger">
                                <div *ngIf="f.name.errors?.required">le nom est requis.</div>
@@ -43,7 +43,7 @@
                          <div class="row">
                             <input type="email" formControlName="email"
                              id="email" class="form__input" placeholder="email@gmmail.com"
-                             [(ngModel)]="sig.email">
+                             >
                              <div *ngIf="f.email.touched && f.email.invalid" class="alert alert-danger">
                                <div *ngIf="f.email.errors?.required">l'email est requis.</div>
                                <div *ngIf="f.email.errors?.email">Please, enter valid email address.</div>
@@ -53,7 +53,7 @@
                          <div class="row">
                             
                             <select formControlName="role"class="form-control" id="role" 
-                            [(ngModel)]="sig.role">
+                         >
                         
                                 <option value="admin">Admin</option>
                                 <option value="condidat">Candidat</option>
@@ -69,7 +69,7 @@
                             <!-- <span class="fa fa-lock"></span> -->
                             <input type="password" formControlName="password" id="password"
                              class="form__input" placeholder="Password"
-                             [(ngModel)]="sig.password">
+                             >
                              <div *ngIf="f.password.touched && f.password.invalid" class="alert alert-danger">
                                <div *ngIf="f.password.errors?.required"> le mot de pase est requis.</div>
                                <div *ngIf="f.password.errors?.minlength">  mot de pase tout cours 6 caractere au moins.</div>

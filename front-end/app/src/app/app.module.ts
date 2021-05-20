@@ -13,6 +13,12 @@ import { AdminComponent } from './layouts/admin/admin.component';
 import { SigComponent } from './sig/sig.component';
 import { LoginComponent } from './login/login.component';
 import { PublicationComponent } from './publication/publication.component';
+import { EtablissementComponent } from './etablissement/etablissement.component';
+import { AuteurComponent } from './auteur/auteur.component';
+import { DoctorantComponent } from './doctorant/doctorant.component';
+import { EquipeComponent } from './equipe/equipe.component';
+import { ProfComponent } from './prof/prof.component';
+import { Etab2Component } from './etab2/etab2.component';
 
 
 @NgModule({
@@ -31,6 +37,18 @@ import { PublicationComponent } from './publication/publication.component';
     LoginComponent,
    
     PublicationComponent,
+   
+    EtablissementComponent,
+   
+    AuteurComponent,
+   
+    DoctorantComponent,
+   
+    EquipeComponent,
+   
+    ProfComponent,
+   
+    Etab2Component,
    
   ],
   imports: [

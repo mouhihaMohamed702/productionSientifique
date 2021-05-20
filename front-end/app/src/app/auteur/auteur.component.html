@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+</html>
+<app-navbar></app-navbar>
+      
+
+<div class="container">
+   
+  <div class="panel-group">
+   
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">Ajouter un Auteur </div>
+      <div class="panel-body">
+           <form control="" class="form-group">
+               
+                
+            <div class="row text-center">
+            
+                <div class="col-sm-6">
+               
+                        <div class="form-group">
+                             <label for="nom">Nom de l'Auteur  :</label>
+                        <input type="text" formControlName="nom" 
+                               placeholder="  Nom de l'Auteur "
+                               required  class="form-control"
+                                />
+                            </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        
+                        <label for="prenom">Prenom de l'Auteur  :</label>
+                        <input type="text" formControlName="prenom" 
+                               placeholder="  prenom de l'Auteur "
+                               required  class="form-control"
+                                />
+
+                       
+                    </div>
+              
+                        </div>
+                        <div class="col-sm-6">
+                               
+                               <div class="form-group">
+                                <label for="bnrposte">Type  :</label>
+                          
+                        <select formControlName="metier"class="form-control" id="metier" 
+                        required>
+                            <option value="Extern">Extern</option>
+                            <option value="Intern">Intern</option>
+                        </select>
+                               </div>
+                            </div>
+                            <div class="col-sm-6">
+                               <div class="form-group">
+                                <label for="lieu">Etablissement   :</label>
+                           <input type="text" formControlName="lieu" 
+                                  placeholder="  Etablissement   "
+                                  required class="form-control" 
+                                 />
+                               </div>
+                            </div>
+                      
+                            
+                          
+             </div>
+
+
+
+
+           
+       
+
+
+
+
+
+
+
+
+         
+              <br>
+ 
+                <div class="form-group">
+                     
+                        <button type="submit" class="btn btn-success"> 
+                            <span class="glyphicon glyphicon-add"></span>Ajouter</button>
+                        </div>
+                    </form>
+         </div>        
+            
+            
+          
+        
+            
+    </div>
+
+  
+  </div>
+</div>
+
+
+
+ 
