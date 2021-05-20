@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+</html>
+<app-navbar></app-navbar>
+      
+
+<div class="container">
+   
+  <div class="panel-group">
+   
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">Modifier un equipe </div>
+      <div class="panel-body">
+           <form control="" class="form-group">
+               
+                
+            <div class="row text-center">
+            
+                <div class="col-sm-6">
+               
+                        <div class="form-group">
+                             <label for="nom">Nom de l'equipe :</label>
+                        <input type="text" formControlName="nom" 
+                               placeholder="  Nom de l'equipe "
+                               required  class="form-control"
+                                />
+                            </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        
+                        <label for="prenom">universite de l'equipe  :</label>
+                        <input type="text" formControlName="prenom" 
+                               placeholder="  universite"
+                               required  class="form-control"
+                                />
+
+                       
+                    </div>
+              
+                        </div>
+                        <div class="col-sm-6">
+                               
+                               <div class="form-group">
+                                <label for="bnrposte">Type  :</label>
+                          
+                        <select formControlName="metier"class="form-control" id="metier" 
+                        required>
+                            <option value="Extern">Extern</option>
+                            <option value="Intern">Intern</option>
+                        </select>
+                               </div>
+                            </div>
+                            <div class="col-sm-6">
+                               <div class="form-group">
+                                <label for="lieu">Les membres   :</label>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Baddi Youssef</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <label><input type="checkbox" value="">Yassine Malah</label>
+                                  </div>
+                               </div>
+                            </div>
+                      
+                            
+                          
+             </div>
+
+
+
+
+           
+       
+
+
+
+
+
+
+
+
+         
+              <br>
+ 
+                <div class="form-group">
+                     
+                        <button type="submit" class="btn btn-success"> 
+                            <span class="glyphicon glyphicon-add"></span>Modifier</button>
+                        </div>
+                    </form>
+         </div>        
+            
+            
+          
+        
+            
+    </div>
+
+  
+  </div>
+</div>
+
+
+
+<app-footer></app-footer>

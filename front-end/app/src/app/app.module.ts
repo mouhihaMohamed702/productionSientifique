@@ -24,6 +24,12 @@ import { DoctorantlistComponent } from './doctorantlist/doctorantlist.component'
 import { EquipelistComponent } from './equipelist/equipelist.component';
 import { AuteurlistComponent } from './auteurlist/auteurlist.component';
 import { EtablissementlistComponent } from './etablissementlist/etablissementlist.component';
+import { EtablissementeditComponent } from './etablissementedit/etablissementedit.component';
+import { EquipeeditComponent } from './equipeedit/equipeedit.component';
+import { ProfeditComponent } from './profedit/profedit.component';
+import { DoctoranteditComponent } from './doctorantedit/doctorantedit.component';
+import { AuteureditComponent } from './auteuredit/auteuredit.component';
+import { PublicationeditComponent } from './publicationedit/publicationedit.component';
 
 
 @NgModule({
@@ -64,6 +70,18 @@ import { EtablissementlistComponent } from './etablissementlist/etablissementlis
     AuteurlistComponent,
    
     EtablissementlistComponent,
+   
+    EtablissementeditComponent,
+   
+    EquipeeditComponent,
+   
+    ProfeditComponent,
+   
+    DoctoranteditComponent,
+   
+    AuteureditComponent,
+   
+    PublicationeditComponent,
    
   ],
   imports: [
