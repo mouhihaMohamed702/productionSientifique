@@ -16,7 +16,7 @@
 <app-navbar></app-navbar>
 <div class="container">
 <div class="panel-group">
-    <a routerLink=''> 
+    <a routerLink='/doctorant'> 
         <span class="glyphicon glyphicon-plus" ></span>
         Ajouter doctorant </a>
 <div class="panel panel-primary">
@@ -29,6 +29,8 @@
       <thead>
           <tr>
               <th>Nom   </th>     <th>Prenom  </th> <th>intutule de la these   </th>
+              <th>Directeur de these   </th>     <th>co-directeur </th> <th>cotutelle   </th>
+              <th>année d'inscription:  </th> 
                <th>date de soutenance :  </th> 
                   
               
@@ -47,9 +49,19 @@
               </a></th>
           
           -->
+
+
+          <th>mouhiha</th> 
+          <th>mohamed</th> 
+          <th>Big Data Analytics</th>
+          <th>Baddi Youssef</th> 
+          <th>Yassine Malah</th>
+          <th>Baddi Youssef</th>
+          <th>07/15/2023</th> 
+          <th>08/15/2026</th> 
               <td>
                    
-                  <a routerLink="/compte/mesinfos/editcv/{{ elt.id }}"
+                  <a routerLink="/doctorantedit"
                    >
                   <span class="glyphicon glyphicon-edit">
                   </span> 
