@@ -36,19 +36,14 @@
       </thead>
       <tbody>
           <tr>
-       <!--   <tr *ngFor="let elt of cvs ">
-              <th>{{ elt.id }}</th>  
-              <th>{{ elt.titre }}</th>
-              <th>{{ elt.langue }}</th>
-              <th><a href="#" (click)="view(elt.image)">
-                  {{elt.image}}
-              </a></th>
+         <tr *ngFor="let elt of cvs ">
+              <th>{{ elt.Nom }}</th>  
+              <th>{{ elt.Prenom }}</th>
+              <th>{{ elt.Type }}</th>
+             
           
-          -->
-          <th>Mouhiha</th>  
-          <th>Mohamed</th>  
-          <th>intern</th>  
-          <th>fpsb</th>  
+          
+         
               <td>
                    
                   <a routerLink="/auteuredit"

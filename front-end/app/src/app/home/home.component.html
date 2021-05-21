@@ -1,241 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+</html>
         <app-navbar></app-navbar>
   
 <div class="container">
  
-    <div class="row">
-      
-     
-  
-      <div class="col-md-6 mt-4"   >
-    <div class="panel-group">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          
-        </div>
+  <div class="row">
     
-        <div class="panel-body" >
-           
-          <div class="col-sm-12">
-          <h3>Big Data Analytics</h3>
-            <hr>
-            
-            <h4>les auteurs:Baddi Youssef,<br>
-              Yassine Malah,<br>
-              mouhiha mohamed.</h4>
-            <h4> publication revue internationnale indexe : journale x
-                  .</h4>
-                  <h4>      publication revue commite de lecture : journale y</h4>
-              <h4>  </h4>
-            
-            
-          </div>
+   
+
+    <div class="col-md-6 mt-4" *ngFor="let elt of posts">
+  <div class="panel-group">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        
+      </div>
   
-          <div class="form-group">
-            <a    routerLink="">
-                      <button  class="btn btn-success"> 
+      <div class="panel-body" >
+         
+        <div class="col-sm-12">
+        <h3>{{elt.titre}}</h3>
+          <hr>
+          
+          <h4>{{elt.auteurs }}</h4>
+          <h4>{{elt.revueinter}}.</h4>
+           <h4> {{elt.revuecom}}</h4>
+           <h4>{{elt. revues}}</h4>
+           <h4>{{elt. anne}}</h4>
+          
+
+
+
+
+
+
+
+
+            
+            
+
+
+
+
+
+
+        </div>
+
+        <div class="form-group">
+          <a    routerLink="/postuler/{{ elt.id }}">
+                    <button  class="btn btn-success"> 
                         voir plus</button>
-                        </a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a    routerLink="">
-                          <button  class="btn btn-success"> 
-                            Modifier</button>
-                            </a>
-                      </div>
-  
-  
-  
-          
-               
-        </div>
-    </div>
+                      </a>
+                    </div>
+
+
+
+        
+             
+      </div>
   </div>
-  
-  </div>
+</div>
+
+</div>
+</div></div>
 
 
-
-
-
-
-
-
-
-
-  <div class="col-md-6 mt-4"   >
-    <div class="panel-group">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          
-        </div>
-    
-        <div class="panel-body" >
-           
- <div class="col-sm-12">
-          <h3>L'intelligence artificielle</h3>
-            <hr>
-            
-            <h4>les auteurs:Baddi Youssef,<br>
-              Yassine Malah,<br>
-              mouhiha mohamed.</h4>
-            <h4> publication revue internationnale indexe : journale xy
-                  .</h4>
-                  <h4>      publication revue commite de lecture : journale yz</h4>
-              <h4>  </h4>
-            
-            
-          </div>
-  
-          <div class="form-group">
-            <a    routerLink="">
-                      <button  class="btn btn-success"> 
-                        voir plus</button>
-                        </a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a    routerLink="">
-                          <button  class="btn btn-success"> 
-                            Modifier</button>
-                            </a>
-                      </div>
-  
-  
-  
-          
-               
-        </div>
-    </div>
-  </div>
-  
-  </div>
-
-
-
-
-
-  <div class="col-md-6 mt-4"   >
-    <div class="panel-group">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          
-        </div>
-    
-        <div class="panel-body" >
-           
- <div class="col-sm-12">
-          <h3> Analyse d'informations hétérogènes et modèle de préférences pour identifier et favoriser la mise
-            en réseau d'acteurs du tourisme
-            </h3>
-            <hr>
-            
-            <h4>les auteurs:Baddi Youssef,<br>
-              Yassine Malah,<br>
-              mouhiha mohamed.</h4>
-            <h4> publication revue internationnale indexe : journale xy
-                  .</h4>
-                  <h4>      publication revue commite de lecture : journale yz</h4>
-              <h4>  </h4>
-            
-            
-          </div>
-  
-          <div class="form-group">
-            <a    routerLink="">
-                      <button  class="btn btn-success"> 
-                        voir plus</button>
-                        </a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a    routerLink="">
-                          <button  class="btn btn-success"> 
-                            Modifier</button>
-                            </a>
-                      </div>
-  
-  
-  
-          
-               
-        </div>
-    </div>
-  </div>
-  
-  </div>
-
-
-
-  <div class="col-md-6 mt-4"   >
-    <div class="panel-group">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          
-        </div>
-    
-        <div class="panel-body" >
-           
- <div class="col-sm-12">
-          <h3>reseaux informatique</h3>
-            <hr>
-            
-            <h4>les auteurs:Baddi Youssef,<br>
-              Yassine Malah,<br>
-              mouhiha mohamed.</h4>
-            <h4> publication revue internationnale indexe : journale xy
-                  .</h4>
-                  <h4>      publication revue commite de lecture : journale yz</h4>
-              <h4>  </h4>
-            
-            
-          </div>
-  
-          <div class="form-group">
-            <a    routerLink="">
-                      <button  class="btn btn-success"> 
-                        voir plus</button>
-                        </a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a    routerLink="">
-                          <button  class="btn btn-success"> 
-                            Modifier</button>
-                            </a>
-                      </div>
-  
-  
-  
-          
-               
-        </div>
-    </div>
-  </div>
-  
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-  </div></div>
-  
   
   
    <app-footer></app-footer>
