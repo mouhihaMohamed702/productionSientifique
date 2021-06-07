@@ -1,26 +1,39 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators} from '@angular/forms';
+import { AuthService } from '../_services/auth.service';
+
 @Component({
-  selector: 'app-sig',
-  templateUrl: './sig.component.html',
-  styleUrls: ['./sig.component.css']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
-export class SigComponent implements OnInit {
+export class RegisterComponent implements OnInit {
+  form: any = {
+    username: null,
+    email: null,
+    password: null
+  };
+  isSuccessful = false;
+  isSignUpFailed = false;
+  errorMessage = '';
 
-  constructor() { }
- 
-  form = new FormGroup({
-    name: new FormControl(null, [Validators.required]),
-    email: new FormControl('', [Validators.required, Validators.email]),
-    role: new FormControl('', [Validators.required]),
-    password: new FormControl('', [Validators.required, Validators.minLength(6)]),
-
-   
-});
+  constructor(private authService: AuthService) { }
 
   ngOnInit(): void {
   }
-  get f(){
-    return this.form.controls;
+
+  onSubmit(): void {
+    const { username, email, password } = this.form;
+
+    this.authService.register(username, email, password).subscribe(
+      data => {
+        console.log(data);
+        this.isSuccessful = true;
+        this.isSignUpFailed = false;
+      },
+      err => {
+        this.errorMessage = err.error.message;
+        this.isSignUpFailed = true;
+      }
+    );
   }
 }
